@@ -19,8 +19,7 @@ async function enviarScript(scriptText){
 
 //Função que chama a função enviarScript dentro de um loop
 function spam(message, loop) {
-	var delay = 1000; // 1 second
-	
+	var delay = 100; // 1 milisegundo	
 	for (var i = 0; i < loop; i++){
 		window.setTimeout(function(){
 			enviarScript(message);
